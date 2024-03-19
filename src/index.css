@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .bar {
+        @apply w-full h-1 rounded-full bg-[#5235e8] flex-none
+    }
+}
+
 ul li {
     cursor: pointer;
 }
@@ -11,7 +17,7 @@ ul li {
     overflow: hidden;
     background-color: #edf2f7;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
     color: rgb(26, 26, 26);
     cursor: default;
@@ -33,7 +39,7 @@ ul li {
 
 .Dropdown-option {
     box-sizing: border-box;
-    color: #747474;
+    color: black;
     cursor: pointer;
     display: block;
     padding: 4px 10px;
@@ -46,7 +52,12 @@ ul li {
 
 .Dropdown-option.is-selected {
     background-color: white;
-    color: #747474;
+    color: black
+}
+
+.Dropdown-option.is-selected:hover {
+    background-color: #5235e8;
+    color: white;
 }
 
 .Dropdown-arrow {

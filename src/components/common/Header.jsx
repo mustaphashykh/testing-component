@@ -17,9 +17,9 @@ function Header() {
     ];
     const [selectedOption, setSelectedOption] = useState(options[0]);
     return (
-        <div className="bg-white text-highlighted-text text-base w-full flex items-center justify-between p-2 sm:p-0 sm:py-8 sm:px-10">
+        <div className="bg-white text-highlighted-text text-base w-full flex items-center justify-between p-2 sm:p-0 sm:py-8 sm:px-10 sticky top-0 z-50">
             <div className='flex items-center gap-x-3'>
-                <div className='w-8 h-10 skew-x-[40deg] flex flex-wrap'>
+                <div className='w-8 h-8 skew-x-[45deg] flex flex-wrap'>
                     <div className='w-[50%] h-[50%]' />
                     <div className='w-[50%] h-[50%] bg-main-purple' />
                     <div className='w-[50%] h-[50%] bg-main-purple' />
